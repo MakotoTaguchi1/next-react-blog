@@ -5,10 +5,18 @@ import Contact from "components/contact";
 import { TwoColumn, TwoColumnMain, TwoColumnSidebar } from "components/two-column";
 import eyecatch from "images/about.jpg"
 import Image from "next/image";
+import Meta from "components/meta";
 
 export default function About() {
   return (
     <Container>
+      <Meta 
+        pageTitle="アバウト"
+        pageDesc="About development activities"
+        pageImg={eyecatch.src}
+        pageImgW={eyecatch.width}
+        pageImgH={eyecatch.height}
+      />
       <Hero 
         title="About"
         subtitle="About development activities"
