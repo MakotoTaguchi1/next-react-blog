@@ -3,6 +3,8 @@ import Container from "components/container";
 import PostBody from "components/post-body";
 import Contact from "components/contact";
 import { TwoColumn, TwoColumnMain, TwoColumnSidebar } from "components/two-column";
+import eyecatch from "images/about.jpg"
+import Image from "next/image";
 
 export default function About() {
   return (
@@ -11,6 +13,21 @@ export default function About() {
         title="About"
         subtitle="About development activities"
       />
+
+      <figure>
+        <Image
+          src={eyecatch}
+          alt=""
+          // layout="responsive" 非推奨のため、styleを適用
+          style={{
+            width: '100%',
+            height: 'auto',
+          }}
+          sizes="(min-width: 1152px) 1152px, 100vw"
+          priority
+          placeholder="blur"
+        />
+      </figure>
 
       <TwoColumn>
         <TwoColumnMain>

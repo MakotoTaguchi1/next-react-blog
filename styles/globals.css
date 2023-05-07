@@ -46,6 +46,11 @@ h3 {
   font-size: var(--heading3);
 }
 
+/* next/image */
+span > img {
+  transition: 0.2s;
+}
+
 /* リセット（ブラウザが標準で適用するマージン等のリセット） */
 body,
 h1,
